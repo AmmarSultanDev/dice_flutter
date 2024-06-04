@@ -18,17 +18,26 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('First App'),
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                'Hello World!',
-              ),
-              Text(
-                'It\'s time to learn Flutter!',
-              ),
-            ],
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFF27085D), Color.fromARGB(255, 93, 9, 237)],
+            ),
+          ),
+          child: const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  style: TextStyle(color: Colors.white),
+                  'Hello World!',
+                ),
+                Text(
+                  style: TextStyle(color: Colors.white),
+                  'It\'s time to learn Flutter!',
+                ),
+              ],
+            ),
           ),
         ),
       ),
