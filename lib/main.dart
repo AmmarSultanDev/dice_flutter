@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
           title: const Text('First App'),
         ),
         body: const GradientContainer(
-          colors: [Color(0xFF27085D), Color.fromARGB(255, 93, 9, 237)],
-        ),
+            colors: [Color(0xFF27085D), Color.fromARGB(255, 93, 9, 237)],
+            imagePath: 'assets/images/dice-1.png'),
       ),
     );
   }

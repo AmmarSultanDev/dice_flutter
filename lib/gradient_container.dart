@@ -5,9 +5,11 @@ class GradientContainer extends StatelessWidget {
   const GradientContainer({
     super.key,
     this.colors,
+    required this.imagePath,
   });
 
   final List<Color>? colors;
+  final String imagePath;
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +21,10 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            StyledText('Hello World!'),
-            StyledText('It\'s time to learn Flutter!'),
-          ],
+      child: Center(
+        child: Image.asset(
+          imagePath,
+          width: 200,
         ),
       ),
     );
