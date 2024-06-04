@@ -4,19 +4,22 @@ import 'package:flutter/material.dart';
 class GradientContainer extends StatelessWidget {
   const GradientContainer({
     super.key,
+    this.colors,
   });
+
+  final List<Color>? colors;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFF27085D), Color.fromARGB(255, 93, 9, 237)],
+          colors: colors!,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
       ),
-      child: Center(
+      child: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

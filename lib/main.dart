@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('First App'),
         ),
-        body: const GradientContainer(),
+        body: const GradientContainer(
+          colors: [Color(0xFF27085D), Color.fromARGB(255, 93, 9, 237)],
+        ),
       ),
     );
   }
